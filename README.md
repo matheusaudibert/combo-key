@@ -1,3 +1,5 @@
+[Access the portuguese version of the README](README-ptbr.md).
+
 <div align="center">
   <a href="https://combokey.audibert.dev">
     <img src="assets/readme/logo.png" alt="Combo Key"/>
@@ -6,133 +8,133 @@
 
 # Combo Key
 
-Um jogo de reflexos desafiador onde você deve pressionar rapidamente as teclas na ordem que aparecem na tela. Cada acerto constrói seu combo, mas **um único erro quebra tudo**. Desenvolvido em C++ com a biblioteca Raylib.
+A challenging reflex game where you must quickly press keys in the order they appear on screen. Each hit builds your combo, but **a single mistake breaks everything**. Developed in C++ with the Raylib library.
 
-## Sobre o Jogo
+## About the Game
 
-**Combo Key** testa sua velocidade e precisão ao máximo! Sequências de teclas aparecem na tela e você tem um tempo limitado para pressioná-las na ordem correta. A cada sequência completada, seu combo aumenta e uma nova sequência mais longa é gerada.
+**Combo Key** tests your speed and precision to the max! Key sequences appear on screen and you have limited time to press them in the correct order. With each completed sequence, your combo increases and a new longer sequence is generated.
 
-### Como Jogar
+### How to Play
 
-1. Uma sequência de teclas aparece na tela
-2. Pressione as teclas na ordem correta antes que o tempo acabe
-3. Complete a sequência para ganhar +1 combo e enfrentar uma sequência maior
-4. Continue até errar ou o tempo acabar
+1. A key sequence appears on screen
+2. Press the keys in the correct order before time runs out
+3. Complete the sequence to gain +1 combo and face a longer sequence
+4. Continue until you make a mistake or time runs out
 
-### Sistema de Dificuldades
+### Difficulty System
 
-O jogo possui **3 níveis de dificuldade** que controlam o tempo disponível:
+The game has **3 difficulty levels** that control the available time:
 
-| Dificuldade | Tempo Inicial | Bônus por Acerto |
-| ----------- | ------------- | ---------------- |
-| **Fácil**   | 4.0 segundos  | +1.0 segundo     |
-| **Médio**   | 2.5 segundos  | +1.0 segundo     |
-| **Difícil** | 1.0 segundo   | +1.0 segundo     |
+| Difficulty | Initial Time | Bonus per Hit |
+| ---------- | ------------ | ------------- |
+| **Easy**   | 4.0 seconds  | +1.0 second   |
+| **Medium** | 2.5 seconds  | +1.0 second   |
+| **Hard**   | 1.0 second   | +1.0 second   |
 
 > [!NOTE]  
-> Ganhar tempo bônus nunca excede o limite da dificuldade. No nível Difícil, mesmo acertando, o tempo máximo permanece 1 segundo.
+> Gaining bonus time never exceeds the difficulty limit. On Hard level, even when hitting correctly, the maximum time remains 1 second.
 
-## Recursos
+## Features
 
-- **Visual:** Interface intuitiva com animações suaves
-- **Áudio:** Sons únicos para cada ação (teclas, combos, falhas) - efeitos sonoros do jogo UNDERTALE
-- **Música:** Trilha sonora envolvente
-- **Som de Entrada:** Narração personalizada dizendo o nome do jogo, gravada com minha própria voz e editada
-- **Teclas Suportadas:** A-Z, números 0-9 e setas direcionais
-- **Animações:** Transições fluidas e feedback visual imediato
+- **Visual:** Intuitive interface with smooth animations
+- **Audio:** Unique sounds for each action (keys, combos, failures) - sound effects from UNDERTALE game
+- **Music:** Immersive soundtrack
+- **Entrance Sound:** Custom narration saying the game name, recorded with my own voice and edited
+- **Supported Keys:** A-Z, numbers 0-9 and directional arrows
+- **Animations:** Fluid transitions and immediate visual feedback
 
 ## Demo
 
-### Menu Principal
+### Main Menu
 
-![Menu Principal](assets/readme/menu.png)
+![Main Menu](assets/readme/menu.png)
 
 ### Gameplay
 
 ![Gameplay](assets/readme/game.png)
 
-## Controles
+## Controls
 
-### No Menu:
+### In Menu:
 
-- **ENTER** para iniciar o jogo
-- **Plus (+)** para selecionar dificuldade
-- **BACKSPACE** para sair
+- **ENTER** to start the game
+- **Plus (+)** to select difficulty
+- **BACKSPACE** to exit
 
 > [!NOTE]
-> Clique nas letras COMBO/KEY para alterá-las aleatoriamente (Apenas um detalhe)
+> Click on COMBO/KEY letters to change them randomly (Just a detail)
 
-### Durante o Jogo:
+### During Game:
 
-- **A-Z** - Pressione as letras correspondentes
-- **0-9** - Pressione os números correspondentes
-- **Setas** - Use as setas direcionais
-- **Qualquer tecla** - Para a tecla sem desenho
+- **A-Z** - Press corresponding letters
+- **0-9** - Press corresponding numbers
+- **Arrows** - Use directional arrows
+- **Any key** - For keys without drawing
 
-### Tela de Game Over:
+### Game Over Screen:
 
-- **ENTER** - Jogar novamente
-- **ESC** - Voltar ao menu principal
-- **BACKSPACE** - Sair do jogo
+- **ENTER** - Play again
+- **ESC** - Return to main menu
+- **BACKSPACE** - Exit game
 
-## Mecânicas de Jogo
+## Game Mechanics
 
-### Sistema de Combo
+### Combo System
 
-- **Progressão:** A cada sequência completada, o combo aumenta em +1
-- **Sequências Crescentes:** Começe com 1-8 teclas aleatórias, aumente até 8 teclas máximo
-- **Reset Fatal:** Qualquer erro reseta o combo para 0 e elimina o jogador
+- **Progression:** With each completed sequence, combo increases by +1
+- **Growing Sequences:** Start with 1-8 random keys, increase up to 8 keys maximum
+- **Fatal Reset:** Any mistake resets combo to 0 and eliminates the player
 
-### Sistema de Tempo
+### Time System
 
-- **Tempo Limite:** Baseado na dificuldade selecionada
-- **Bônus de Acerto:** +1 segundo por tecla correta (limitado pelo máximo da dificuldade)
-- **Game Over:** Tempo zerado ou tecla errada = fim de jogo
+- **Time Limit:** Based on selected difficulty
+- **Hit Bonus:** +1 second per correct key (limited by difficulty maximum)
+- **Game Over:** Time runs out or wrong key = game over
 
-### Geração de Sequências
+### Sequence Generation
 
-- **Aleatório:** Cada nova rodada gera sequências únicas
-- **Variedade:** Letras, números e setas direcionais
-- **Teclas Especiais:** Tecla vazia aceita qualquer entrada
+- **Random:** Each new round generates unique sequences
+- **Variety:** Letters, numbers and directional arrows
+- **Special Keys:** Empty key accepts any input
 
-## Tecnologias
+## Technologies
 
-- **C++** - Linguagem principal
-- **Raylib** - Framework para gráficos, áudio e input
-- **Assets customizados** - Sprites, sons e texturas próprias
+- **C++** - Main language
+- **Raylib** - Framework for graphics, audio and input
+- **Custom Assets** - Own sprites, sounds and textures
 
-## Jogar
+## Play
 
-Jogue no navegador através do link: https://combokey.audibert.dev
+Play in browser through the link: https://combokey.audibert.dev
 
-Ou baixe para seu sistema:
+Or download for your system:
 
 - **Windows:** `combo-key.exe`
-- **Outros sistemas:** Compile o código fonte
+- **Other systems:** Compile source code
 
-## Estrutura do Projeto
+## Project Structure
 
 ```
 combo-key/
-├── src/                  # Código fonte
-│   ├── main.cpp          # Loop principal e lógica do jogo
-│   ├── game_logic.h/cpp  # Funções de gameplay
-│   └── key_button.h/cpp  # Sistema de botões e interface
-├── assets/               # Recursos visuais e sonoros
-│   ├── sounds/           # Efeitos sonoros e música
-│   ├── keys/             # Sprites das teclas (claro/escuro)
-│   ├── others/           # Texturas de fundo
-│   └── readme/           # Imagens do README
-└── raylib/               # Biblioteca Raylib
+├── src/                  # Source code
+│   ├── main.cpp          # Main loop and game logic
+│   ├── game_logic.h/cpp  # Gameplay functions
+│   └── key_button.h/cpp  # Button system and interface
+├── assets/               # Visual and audio resources
+│   ├── sounds/           # Sound effects and music
+│   ├── keys/             # Key sprites (light/dark)
+│   ├── others/           # Background textures
+│   └── readme/           # README images
+└── raylib/               # Raylib library
 ```
 
-## Compilação
+## Compilation
 
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/combo-key.git
+# Clone the repository
+git clone https://github.com/your-username/combo-key.git
 cd combo-key
 
-# Compile com Raylib instalado (Windows)
+# Compile with Raylib installed (Windows)
 g++ -o combo-key src/main.cpp src/key_button.cpp src/game_logic.cpp -lraylib -lopengl32 -lgdi32 -lwinmm
 ```
