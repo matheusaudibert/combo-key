@@ -101,6 +101,7 @@ O jogo possui **3 níveis de dificuldade** que controlam o tempo disponível:
 
 - **C++** - Linguagem principal
 - **Raylib** - Framework para gráficos, áudio e input
+- **Emscripten** - Compilação para JavaScript para execução no navegador
 - **Assets customizados** - Sprites, sons e texturas próprias
 
 ## Jogar

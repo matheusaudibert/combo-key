@@ -101,6 +101,7 @@ The game has **3 difficulty levels** that control the available time:
 
 - **C++** - Main language
 - **Raylib** - Framework for graphics, audio and input
+- **Emscripten** - Compilation to JavaScript for web browser execution
 - **Custom Assets** - Own sprites, sounds and textures
 
 ## Play
